@@ -221,6 +221,11 @@ html::before {
   text-align: center;
   font-size: 33px;
   display: block;
+  margin-top: 10px;
+}
+
+.lista li {
+  margin-bottom: 0px;
 }
 
 .title-paragraph-1 {
@@ -269,12 +274,9 @@ html::before {
 }
 
 .text_5 {
-  margin-top: 20px;
   background-color: #f4f4f4;
   box-shadow: 0px 0px 28px -11px rgba(0, 0, 0, 1);
-
   font-size: 25px;
-  text-align: left;
   font-weight: bold;
 }
 
@@ -334,7 +336,7 @@ html::before {
 
 @media (max-width: 600px) {
   .elementos {
-    font-size: 20px;
+    font-size: 28px;
   }
 
   .title-paragraph-1 {
