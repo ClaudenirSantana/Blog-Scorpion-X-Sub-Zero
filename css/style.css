@@ -260,21 +260,9 @@ body {
   font-size: 20px;
 }
 
-.text_1 {
-  font-size: 20px;
-}
-
+.text_1,
 .text_2 {
   font-size: 20px;
-}
-
-.text_3 blockquote,
-.text_4 blockquote {
-  display: block;
-  margin: 10px 0;
-  padding: 10px 3px 15px;
-  font-size: 20px;
-  text-align: left;
 }
 
 .text_5 {
@@ -322,9 +310,6 @@ body {
 
 .fire-divider {
   height: clamp(14px, 1.8vh, 22px);
-}
-
-@media (max-width: 900px) {
 }
 
 @media (max-width: 600px) {
