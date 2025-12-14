@@ -85,13 +85,18 @@ html::before {
   font-weight: normal;
 }
 .sub-zero_title {
-  font-size: 4.2rem;
   color: #003cff;
   font-weight: bold;
 }
 
+.scorpion_title,
+.sub-zero_title,
+.versus_v,
+.versus_s {
+  font-size: inherit;
+}
+
 .scorpion_title {
-  font-size: 4.2rem;
   color: #ff0000;
   font-weight: bold;
 }
@@ -108,8 +113,7 @@ html::before {
   margin-bottom: -3px;
 }
 
-.vesus_v {
-  font-size: 4.5rem;
+.versus_v {
   animation: flicker-fire 1s infinite;
   background: linear-gradient(
     90deg,
@@ -144,7 +148,6 @@ html::before {
 }
 
 .versus_s {
-  font-size: 4.5rem;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
@@ -188,7 +191,9 @@ html::before {
 
 .header {
   text-align: center;
-  font-size: 55px;
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  padding: 0 1rem;
+  box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -246,7 +251,7 @@ html::before {
 }
 
 .image img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -267,8 +272,8 @@ html::before {
 .text_3 blockquote,
 .text_4 blockquote {
   display: block;
-  margin: 10px 0; /* Margem apenas vertical */
-  padding: 10px 3px 15px; /* Padding interno */
+  margin: 10px 0;
+  padding: 10px 3px 15px;
   font-size: 20px;
   text-align: left;
 }
@@ -288,15 +293,11 @@ html::before {
   font-weight: bold;
 }
 
-/* --- Aumenta o texto a partir de "Origem da Rivalidade" --- */
 .main-paragraph {
-  /* tamanho base responsivo: nunca menor que 16px, cresce com a viewport até 20px */
   font-size: clamp(16px, 4vw, 20px);
-  /* se quiser espaçamento extra entre parágrafos */
   color: #111;
 }
 
-/* garante que parágrafos e listas usem o tamanho da main-paragraph */
 .main-paragraph p,
 .main-paragraph ul,
 .main-paragraph li {
@@ -304,39 +305,33 @@ html::before {
   line-height: inherit;
 }
 
-/* destaca títulos/trechos em negrito um pouco maiores */
 .main-paragraph .bold {
-  font-size: 1.05em; /* 5% maior que o texto base da main-paragraph */
+  font-size: 1.05em;
   font-weight: 700;
 }
 
-/* blocos especiais (ex: text_5) podem ser um pouco maiores */
 .main-paragraph .text_5 {
   font-size: clamp(18px, 4vw, 24px);
   line-height: 1.55;
 }
 
-/* blockquotes dentro da main-paragraph */
 .main-paragraph blockquote {
   font-size: clamp(17px, 4vw, 21px);
   padding-left: 1rem;
   margin: 1rem 0;
 }
 
-/* fire-divider não precisa mudar, mas se quiser adaptar altura */
 .fire-divider {
   height: clamp(14px, 1.8vh, 22px);
-}
-
-@media (max-width: 815px) {
-  .header {
-    font-size: clamp(1.1rem, 6vw, 2.2rem);
-  }
 }
 
 @media (max-width: 600px) {
   .elementos {
     font-size: 28px;
+  }
+
+  .image img {
+    align-items: center;
   }
 
   .title-paragraph-1 {
