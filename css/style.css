@@ -38,6 +38,7 @@ html::before {
 
 body {
   overscroll-behavior: none;
+  background-color: #16213e;
 }
 
 .container {
