@@ -37,6 +37,10 @@ html::before {
   pointer-events: none;
 }
 
+.body {
+  overscroll-behavior: none;
+}
+
 .container {
   position: relative;
   max-width: 900px;
