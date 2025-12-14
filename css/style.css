@@ -329,8 +329,8 @@ html::before {
   }
 
   .image {
-    width: calc(100% + 100px);
-    margin-left: -50px;
+    width: calc(100% + 70px);
+    margin-left: -40px;
   }
 
   .image img {
