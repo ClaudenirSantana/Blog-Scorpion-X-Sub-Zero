@@ -2,8 +2,7 @@ html {
   pointer-events: auto;
   font-family: Helvetica;
   position: relative;
-  min-height: 100vh;
-  pointer-events: none;
+  min-height: 100dvh;
 }
 
 html::before {
@@ -37,7 +36,7 @@ html::before {
   pointer-events: none;
 }
 
-.body {
+body {
   overscroll-behavior: none;
 }
 
